@@ -53,3 +53,7 @@ body {
     background-color: var(--btnBg);
 }
 .btn2:focus { outline-style: none; }
+.newListEntry {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
