@@ -30,3 +30,17 @@ textInput.addEventListener('click', function() {
     console.log("New list value is " + inputVal);
 });
 
+function calculatorValue(){
+    var num1 = Number(document.getElementById('num1').value);
+    var num2 = Number(document.getElementById('num2').value);
+    var result = num1 + num2
+    return result
+}
+
+const runCalculator = document.querySelector('.btn3');
+
+runCalculator.addEventListener('click', function() {
+    let result = calculatorValue()
+    document.getElementById("calcOutput").innerHTML = result;
+    console.log("Calculator results is " + result);
+});
