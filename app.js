@@ -24,6 +24,9 @@ const textInput = document.querySelector('.btn2');
 
 textInput.addEventListener('click', function() {
     let inputVal = getNewListValue()
+    var entry = document.createElement('li');
+    entry.appendChild(document.createTextNode(inputVal));
+    list1.appendChild(entry);
     console.log("New list value is " + inputVal);
 });
 
