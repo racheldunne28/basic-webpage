@@ -12,7 +12,7 @@ li {
 } 
 :root {
     --blue: #c9daf8;
-    --blue2: #6d9eeb;
+    --yellow: #fff2cc;
     --white: #ffffff;
     --black: #000000;
 }
@@ -26,14 +26,14 @@ body {
 .light-theme {
     --bg: var(--blue);
     --fontColor: var(--black);
-    --btnBg: var(--blue2);
+    --btnBg: var(--yellow);
     --btnFontColor: var(--black);
 }
 .dark-theme {
     --bg: var(--black);
     --fontColor: var(--blue);
-    --btnBg: var(--blue2);
-    --btnFontColor: var(--white);
+    --btnBg: var(--yellow);
+    --btnFontColor: var(--black);
 }
 .btn {
     position: absolute;
@@ -58,6 +58,11 @@ body {
 }
 .btn2:focus { outline-style: none; }
 .newListEntry {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    border: none;
+}
+.numentry {
     color: var(--btnFontColor);
     background-color: var(--btnBg);
     border: none;
