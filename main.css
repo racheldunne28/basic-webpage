@@ -1,18 +1,33 @@
 body {
     font-family: monospace;
 }
-
 ul {
     font-family: helvetica;
 }
 li {
     list-style: circle;
-  }
-  
+} 
 .list {
     list-style: square;
-  }
+} 
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+body {
+      background: var(--bg);
+}
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+}
   
-#content1 {
-    font-family: monospace;
-  }
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+}
