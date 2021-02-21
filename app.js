@@ -16,6 +16,14 @@ switcher.addEventListener('click', function() {
 
 function getNewListValue(){
     // Selecting the input element and get its value 
-    var inputVal = document.getElementById("myInput").value;
-    console.log("New list value is " + inputVal);
+    var inputVal = document.getElementById("newListItem").value;
+    return inputVal
 }
+
+const textInput = document.querySelector('.btn2');
+
+textInput.addEventListener('click', function() {
+    let inputVal = getNewListValue()
+    console.log("New list value is " + inputVal);
+});
+
