@@ -67,6 +67,16 @@ body {
     background-color: var(--btnBg);
 }
 .btn3:focus { outline-style: none; }
+.btn4 {
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+    width: 100px !important;
+    height: 50px !important;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn4:focus { outline-style: none; }
 .newListEntry {
     color: var(--btnFontColor);
     background-color: var(--btnBg);
