@@ -1,0 +1,22 @@
+{
+  "name": "basic-webpage",
+  "version": "1.0.0",
+  "description": "Learning to make webpages using HTML/CSS/JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "test": "run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/racheldunne28/basic-webpage.git"
+  },
+  "keywords": [
+    "learn"
+  ],
+  "author": "Rachel Dunne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/racheldunne28/basic-webpage/issues"
+  },
+  "homepage": "https://github.com/racheldunne28/basic-webpage#readme"
+}
