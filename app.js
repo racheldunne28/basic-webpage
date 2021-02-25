@@ -58,17 +58,16 @@ runCalculator.addEventListener('click', function() {
 
 
 function isPrime(num) {
-    if (num === 2) {
-        return true
-    }
+    let isPrime = true;
     for (i=2; i<num; i++) {
         if (num % i === 0) {
-            return false
-        }
-        else {
-            return true
+            isPrime = false
         }
     };
+    if (num === 2) {
+        isPrime = true
+    };
+    return isPrime
 }
 
 
