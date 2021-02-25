@@ -86,4 +86,16 @@ function calculateFactors(num) {
 function calculatePrimeFactors(num) {
     let factors = calculateFactors(num);
     let all_factors_prime = factors.map(isPrime);
+    let not_prime;
+    let factor;
+    let fofs = []
+    while (all_factors_prime.includes(false)) {
+        not_prime = all_factors_prime.indexOf(false);
+        factor = factors[not_prime]
+        fofs = calculateFactors(factor)
+        factors.splice(not_prime,1)
+        factors = factors.concat(fofs)
+        all_factors_prime = factors.map(isPrime);
+    }
+    return factors
 }
