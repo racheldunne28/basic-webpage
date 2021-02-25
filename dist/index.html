@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic webpage</title>
+    <link rel="stylesheet" href="main.css">
+<script defer src="main.js"></script></head>
+<body class="light-theme">
+    <h1>Basic webpage</h1>
+    <div>
+        <button class="btn">Dark</button>
+    </div>
+    <div>
+    <h2>List</h2>
+    <ul id = "list1">
+        <li>Add to this list</li>
+    </ul>
+    </div>
+    <div>
+        <input class="newListEntry" type="text" placeholder="Add list item" id="newListItem">
+        <button class="btn2">Add list item</button>
+    </div>
+    <div class="calculator" id="calculator">
+        <h2>Calculator</h2>
+        <input type="number" id="num1" class="numEntry">
+        <select class="numEntry", id="operation" name="operation">
+            <option value="plus">plus</option>
+            <option value="minus">minus</option>
+        </select>
+        <input type="number" id="num2" class="numEntry">
+        <button class="btn3">Calculate</button>
+        <p id="calcOutput">Calculator output will show here</p>
+    </div>
+    <div class="prime_factors" id="prime_factors">
+        <h2>Prime factors</h2>
+        <input type="number" id="num3" class="numEntry">
+        <button class="btn4">Calculate prime factors</button>
+        <p id="primeFactorsOutput">Prime factors will show here</p>
+    </div>
+    <!-- <script src="app.js"></script> -->
+    <style>body {
+        font-family: monospace;
+    }
+    ul {
+        font-family: helvetica;
+    }
+    li {
+        list-style: circle;
+    } 
+    .list {
+        list-style: square;
+    } 
+    :root {
+        --blue: #c9daf8;
+        --yellow: #fff2cc;
+        --white: #ffffff;
+        --black: #000000;
+    }
+    * {
+        color: var(--fontColor);
+        font-family: helvetica;
+    }
+    body {
+          background: var(--bg);
+    }
+    .light-theme {
+        --bg: var(--blue);
+        --fontColor: var(--black);
+        --btnBg: var(--yellow);
+        --btnFontColor: var(--black);
+    }
+    .dark-theme {
+        --bg: var(--black);
+        --fontColor: var(--blue);
+        --btnBg: var(--yellow);
+        --btnFontColor: var(--black);
+    }
+    .btn {
+        position: absolute;
+        top: 20px;
+        left: 250px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: none;
+        color: var(--btnFontColor);
+        background-color: var(--btnBg);
+    }
+    .btn:focus { outline-style: none; }
+    .btn2 {
+        padding: 0px 0px 0px 0px;
+        text-decoration: none;
+        width: 100px !important;
+        height: 25px !important;
+        border: none;
+        color: var(--btnFontColor);
+        background-color: var(--btnBg);
+    }
+    .btn2:focus { outline-style: none; }
+    .btn3 {
+        padding: 0px 0px 0px 0px;
+        text-decoration: none;
+        width: 100px !important;
+        height: 25px !important;
+        border: none;
+        color: var(--btnFontColor);
+        background-color: var(--btnBg);
+    }
+    .btn3:focus { outline-style: none; }
+    .btn4 {
+        padding: 0px 0px 0px 0px;
+        text-decoration: none;
+        width: 100px !important;
+        height: 50px !important;
+        border: none;
+        color: var(--btnFontColor);
+        background-color: var(--btnBg);
+    }
+    .btn4:focus { outline-style: none; }
+    .newListEntry {
+        color: var(--btnFontColor);
+        background-color: var(--btnBg);
+        border: none;
+    }
+    .numEntry {
+        color: var(--btnFontColor);
+        background-color: var(--btnBg);
+        border: none;
+    }</style>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>

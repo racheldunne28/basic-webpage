@@ -88,7 +88,7 @@ function calculatePrimeFactors(num) {
     let all_factors_prime = factors.map(isPrime);
     let not_prime;
     let factor;
-    let fofs = []
+    let fofs = [];
     while (all_factors_prime.includes(false)) {
         not_prime = all_factors_prime.indexOf(false);
         factor = factors[not_prime]
@@ -119,3 +119,5 @@ runPrimeFactors.addEventListener('click', function() {
     document.getElementById("primeFactorsOutput").innerHTML = primeFactors;
     console.log("Prime factors are " + primeFactors);
 });
+
+module.exports = {calculatePrimeFactors}
