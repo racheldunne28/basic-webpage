@@ -58,6 +58,9 @@ runCalculator.addEventListener('click', function() {
 
 
 function isPrime(num) {
+    if (num === 2) {
+        return true
+    }
     for (i=2; i<num; i++) {
         if (num % i === 0) {
             return false
@@ -65,7 +68,7 @@ function isPrime(num) {
         else {
             return true
         }
-    }
+    };
 }
 
 
@@ -77,4 +80,10 @@ function calculateFactors(num) {
         }
      };
      return factors
+}
+
+
+function calculatePrimeFactors(num) {
+    let factors = calculateFactors(num);
+    let all_factors_prime = factors.map(isPrime);
 }
