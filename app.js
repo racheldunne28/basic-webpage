@@ -97,6 +97,9 @@ function calculatePrimeFactors(num) {
         factors = factors.concat(fofs)
         all_factors_prime = factors.map(isPrime);
     }
+    if (factors.length === 0) {
+        factors = "It's prime!"
+    }
     return factors
 }
 
