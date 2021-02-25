@@ -55,3 +55,15 @@ runCalculator.addEventListener('click', function() {
     document.getElementById("calcOutput").innerHTML = result;
     console.log("Calculator results is " + result);
 });
+
+
+function isPrime(num) {
+    for (i=2; i<num; i++) {
+        if (num % i === 0) {
+            return false
+        }
+        else {
+            return true
+        }
+    }
+}
