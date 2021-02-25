@@ -59,6 +59,7 @@ runCalculator.addEventListener('click', function() {
 
 function isPrime(num) {
     let isPrime = true;
+    let i;
     for (i=2; i<num; i++) {
         if (num % i === 0) {
             isPrime = false
@@ -98,3 +99,19 @@ function calculatePrimeFactors(num) {
     }
     return factors
 }
+
+
+function getPrimeFactorsValue(){
+    var primeFactorsVal = document.getElementById("num3").value;
+    return primeFactorsVal
+}
+
+
+const runPrimeFactors = document.querySelector('.btn4');
+
+runPrimeFactors.addEventListener('click', function() {
+    let primeFactorsVal = getPrimeFactorsValue();
+    let primeFactors = calculatePrimeFactors(primeFactorsVal);
+    document.getElementById("primeFactorsOutput").innerHTML = primeFactors;
+    console.log("Prime factors are " + primeFactors);
+});
